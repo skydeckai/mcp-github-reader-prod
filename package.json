@@ -1,0 +1,41 @@
+{
+  "name": "mcp-github-reader",
+  "version": "1.0.0",
+  "description": "MCP server for bringing Github repos into context",
+  "main": "src/mcp-github-reader.js",
+  "bin": {
+    "mcp-github-reader": "src/mcp-github-reader.js"
+  },
+  "files": [
+    "src/mcp-github-reader.js",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node src/mcp-github-reader.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "github",
+    "repository",
+    "analysis"
+  ],
+  "author": "East Agile",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "zod": "^3.22.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwsinclair/mcp-github-reader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lwsinclair/mcp-github-reader/issues"
+  },
+  "homepage": "https://github.com/lwsinclair/mcp-github-reader#readme"
+}
