@@ -41,22 +41,33 @@ npx mcp-github-reader
 
 ### Integration with Claude
 
-Add this to your Claude tools configuration:
+#### For npm installation:
+
+Add this to your Claude Desktop tools configuration:
 
 ```json
 "github-reader": {
-  "command": "mcp-github-reader"
+  "runtime": "node",
+  "command": "npx",
+  "args": [
+    "-y",
+    "mcp-github-reader"
+  ]
 }
 ```
 
-Or with a full path:
+#### For local installation:
 
 ```json
-"github-reader": {
+"github-reader-test": {
   "command": "node",
-  "args": ["/path/to/node_modules/mcp-github-reader/src/mcp-github-reader.js"]
+  "args": [
+    "/path/to/your/repo/src/mcp-github-reader.js"
+  ]
 }
 ```
+
+Replace `/path/to/your/repo` with your actual repository location.
 
 ## Available Tools
 
